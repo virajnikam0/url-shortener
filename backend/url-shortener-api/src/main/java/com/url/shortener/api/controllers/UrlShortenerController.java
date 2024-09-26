@@ -1,5 +1,6 @@
 package com.url.shortener.api.controllers;
 
+import com.url.shortener.api.constants.AppConstants;
 import com.url.shortener.api.models.*;
 import com.url.shortener.api.services.UrlShortenerService;
 import com.url.shortener.api.entities.UrlShortenerEntity;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/{controllerName}")
+@CrossOrigin(origins = {"*"})
 public class UrlShortenerController {
 
     @Autowired
